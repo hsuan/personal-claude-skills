@@ -18,15 +18,13 @@ Whenever asking Jennifer to paste her calendar, remind her to use this MS Copilo
 > "list all [Month Day] calendar events, meetings defined as events with other people, time blocks defined as events with no other participants."
 
 ## Key Paths
-- Daily todos: `/Users/jennifer.lee/devsnc/personal-notes/todo-daily/YYYY-MM-DD.md`
-- Weekly: `/Users/jennifer.lee/devsnc/personal-notes/todo-daily/week-YYYY-MM-DD.md` (Monday's date)
-- Meetings: `/Users/jennifer.lee/devsnc/personal-notes/meetings/YYYY-MM-DD-HHMM-<name>.md`
-- Config: `/Users/jennifer.lee/devsnc/personal-notes/todo-daily/config.md`
+All paths are defined in this skill's `config.md`. Read it at the start of every session to resolve all file locations.
 
 ## Always Do First
-1. Read `config.md` to get current todo categories and settings
-2. Determine today's date and the current daily file path
-3. Read today's daily file if it exists
+1. Read this skill's `config.md` to resolve all file paths
+2. Read the todo `config.md` (at the path defined above) to get current todo categories and settings
+3. Determine today's date and the current daily file path
+4. Read today's daily file if it exists
 
 ---
 
