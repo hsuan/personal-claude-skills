@@ -12,11 +12,4 @@ Modify this file to reconfigure paths, labels, and settings.
 
 ## Priority Labels
 
-Canonical definition lives in `{base}/todos-n-plans/CLAUDE.md` (shared across all skills).
-
-| Label | Meaning |
-|-------|---------|
-| HV-HU | High value, high urgency |
-| HV-LU | High value, low urgency |
-| LV-HU | Low value, high urgency |
-| LV-LU | Low value, low urgency |
+See `{base}/todos-n-plans/CLAUDE.md`.
