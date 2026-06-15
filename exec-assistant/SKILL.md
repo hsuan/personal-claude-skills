@@ -2,7 +2,7 @@
 name: exec-assistant
 description: >
   Daily executive assistant. Manages todos, goals, and daily reviews.
-  Use with modes: morning | evening | weekly | quarterly | meeting-prep | meeting-notes
+  Use with modes: morning | evening | weekly | quarterly | meeting-prep | meeting-notes | makers-time
 trigger: "exec-assistant"
 ---
 
@@ -77,6 +77,7 @@ All paths are defined in this skill's `config.md`. Read it at the start of every
 6. Create next Monday's daily file from the Daily File Template:
    - Carry forward all flagged incomplete todos (grouped by category)
    - Carry forward Upcoming Important Dates (deduplicated)
+   - Carry forward `## Maker's Time — Open Projects` from this week's file; ask: "Any updates to open maker's time projects?"
 7. Save.
 
 ---
@@ -93,6 +94,37 @@ All paths are defined in this skill's `config.md`. Read it at the start of every
 5. Ask: "What are your top goals for next quarter?"
 6. Create next quarter's file from the Quarterly File Template with the new goals.
 7. Save both files.
+
+---
+
+## Mode: makers-time
+
+**When to use:** Before a deep work block to select a goal and get the ritual + first steps.
+
+### Phase 1 — Goal Planning
+1. Read the current todo file — collect all unchecked `HV-HU` and `HV-LU` items across all categories
+2. Read the current quarter's quarterly file (`quarterly-YYYY-QN.md`) — note the active goals
+3. Present a short ranked list of candidates for this block: HV-HU items first, then HV-LU, with quarterly goals as a reference lens
+4. Ask: **"What's the goal for this block?"** — Jennifer can pick from the list or name something else
+5. Confirm the chosen goal and ask for block duration
+
+### Phase 2 — Block Start
+Once goal and duration are confirmed, deliver in order:
+
+**Ritual:**
+1. Write down any manager's time residual — clear the mental queue before switching modes
+2. Capture information needed for this block from email or Teams
+3. Optional — take a power nap
+4. Make a warm coffee or tea
+5. Let the mind wander and pick 1–2 first steps
+
+**Break criteria** — only these justify interrupting the block:
+- P0 customer escalation
+- Ask from direct manager or above
+- Urgent ask from a direct report
+- Everything else: note it down, handle after the block
+
+**First steps:** 2–3 specific, small, concrete actions for the first 15 minutes — derived from the confirmed goal, not the full todo list
 
 ---
 
@@ -163,6 +195,38 @@ _(carry forward from previous file)_
 ### Research
 
 ## Notes
+```
+
+---
+
+## Weekly File Template
+
+Filename: `week-YYYY-MM-DD.md` (Monday's date). Stored alongside daily files.
+
+```markdown
+# Week of YYYY-MM-DD
+
+## Wins This Week
+-
+
+## Goals for Next Week
+1.
+2.
+3.
+
+## Maker's Time — Open Projects
+<!-- Active projects currently in maker's time rotation — carry forward and update each week -->
+- **[Project name]:** one-line status
+
+## Calendar — Week of YYYY-MM-DD
+
+## Key Dates
+
+## Calendar Actions (to do in Outlook)
+
+## Proposed Time Blocks (add to Outlook)
+
+## Carried Over Todos
 ```
 
 ---
