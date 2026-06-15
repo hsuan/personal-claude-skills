@@ -9,6 +9,7 @@ Modify this file to reconfigure paths, labels, and settings.
 - **Weekly:** `{base}/todos-n-plans/week-YYYY-MM-DD.md`
 - **Meetings:** `{base}/meetings/YYYY-MM-DD-HHMM-<name>.md`
 - **Todo config:** `{base}/todos-n-plans/config.md`
+- **Quarterly goals:** `{base}/todos-n-plans/quarterly-YYYY-QN.md`
 
 ## Priority Labels
 

@@ -1,8 +1,8 @@
 ---
 name: exec-assistant
 description: >
-  Daily executive assistant. Manages todos and daily reviews.
-  Use with modes: morning | evening | weekly | meeting-prep | meeting-notes
+  Daily executive assistant. Manages todos, goals, and daily reviews.
+  Use with modes: morning | evening | weekly | quarterly | meeting-prep | meeting-notes
 trigger: "exec-assistant"
 ---
 
@@ -73,10 +73,26 @@ All paths are defined in this skill's `config.md`. Read it at the start of every
    - "Any to drop?" — remove them
 3. Ask: "What were your top wins this week?"
 4. Ask: "What are your top 3 goals for next week?"
-5. Create next Monday's daily file from the Daily File Template:
+5. **Quarterly check-in:** Read this quarter's quarterly file. For each goal, ask: "Brief update on [goal]?" Log the entry under `## Weekly Log` with today's date and the update. Save the quarterly file.
+6. Create next Monday's daily file from the Daily File Template:
    - Carry forward all flagged incomplete todos (grouped by category)
    - Carry forward Upcoming Important Dates (deduplicated)
-6. Save.
+7. Save.
+
+---
+
+## Mode: quarterly
+
+**When to use:** End of each quarter to review progress and set goals for the next quarter.
+
+**Steps:**
+1. Read this quarter's quarterly file.
+2. Display all goals and the Weekly Log entries.
+3. For each goal, ask: "How did this go? What was accomplished, what wasn't?"
+4. Ask: "Overall reflections on the quarter — wins, misses, surprises?"
+5. Ask: "What are your top goals for next quarter?"
+6. Create next quarter's file from the Quarterly File Template with the new goals.
+7. Save both files.
 
 ---
 
@@ -147,6 +163,29 @@ _(carry forward from previous file)_
 ### Research
 
 ## Notes
+```
+
+---
+
+## Quarterly File Template
+
+Filename: `quarterly-YYYY-QN.md` (e.g. `quarterly-2026-Q2.md`). Stored alongside daily files.
+
+```markdown
+# YYYY QN Goals
+
+## Goals
+1.
+2.
+3.
+
+## Weekly Log
+<!-- Each week: ### YYYY-MM-DD (Friday's date) followed by a brief update per goal -->
+
+## End of Quarter Review
+### Accomplished
+### Missed
+### Reflections
 ```
 
 ---
