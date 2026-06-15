@@ -175,5 +175,5 @@ _Date: YYYY-MM-DD | Time: HH:MM_
 ## Priority Label System
 
 Each todo is prefixed with: `HV-HU` | `HV-LU` | `LV-HU` | `LV-LU` (value × urgency).
-- Apply labels when creating or carrying over any todo.
-- Re-evaluate when urgency changes (due date approaches, someone is blocked).
+- Apply labels when creating any todo or during weekly rollover.
+- Re-evaluate at weekly rollover, or sooner if urgency changes (due date approaches, someone is blocked).
