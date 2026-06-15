@@ -12,9 +12,7 @@ Modify this file to reconfigure paths, labels, and settings.
 
 ## Priority Labels
 
-Each todo is prefixed with: `HV-HU` | `HV-LU` | `LV-HU` | `LV-LU` (value × urgency).
-- Apply labels when creating any todo or during weekly rollover.
-- Re-evaluate at weekly rollover, or sooner if urgency changes (due date approaches, someone is blocked).
+Canonical definition lives in `{base}/todos-n-plans/CLAUDE.md` (shared across all skills).
 
 | Label | Meaning |
 |-------|---------|
